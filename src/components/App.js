@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Preview from "./Preview";
 import Speed from "./Speed";
 import Timer from "./Timer";
+import End from "./End";
 
 const initialState = {
   text: "",
@@ -87,7 +88,7 @@ class App extends Component {
           </div>
         </div>
         <div className="row">
-          <div className="col-md-6 col-sm-12 offset-md-3">
+          <div className="col-md-6 offset-md-3">
             <Preview text={this.state.text} userInput={this.state.userInput} />
             <textarea
               className="form-control mb-3"
@@ -99,7 +100,7 @@ class App extends Component {
           </div>
         </div>
         <div className="row">
-          <div className="col-md-6 col-sm-12 offset-md-3">
+          <div className="col-md-6 offset-md-3">
             <div className="row">
               <div className="col-md-4">
                 <Speed sec={this.state.sec} symbols={this.state.symbols} />
@@ -117,6 +118,7 @@ class App extends Component {
             </div>
           </div>
         </div>
+        {this.state.finished && <End />}
       </div>
     );
   }
