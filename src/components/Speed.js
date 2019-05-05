@@ -8,6 +8,4 @@ export default props => {
     wpm = correct / secs;
   }
   return <div>{Math.round(wpm)} wpm</div>;
-
-  return null;
 };
