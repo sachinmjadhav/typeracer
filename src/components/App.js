@@ -83,7 +83,7 @@ class App extends Component {
         <div className="row">
           <div className="col mx-auto">
             <nav className="navbar navbar-light mb-3">
-              <h2 className="mx-auto">SpeedTracer</h2>
+              <h2 className="mx-auto">TypeRacer</h2>
             </nav>
           </div>
         </div>
